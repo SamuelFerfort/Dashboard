@@ -17,6 +17,15 @@
     
 }
 
+button {
+    background-color: #2596be;
+    color: white;
+    border-radius: 19px;
+    font-weight: bold;
+    padding: 11px 23px;
+    font-size: 20px;
+    border: none;
+}
 .dashboard {
     background-color: #2596be;
     color: white;
@@ -45,8 +54,21 @@ li {
 }
 .header {
     grid-area: header;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    
 }
-
+.top {
+    grid-row: 1 / 2;
+}
+.bot {
+    grid-row: 2 / 3;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
 
 .title {
     font-size: 35px;
@@ -55,4 +77,6 @@ li {
 .menu {
     grid-area: menu;
     
+    
 }
+
