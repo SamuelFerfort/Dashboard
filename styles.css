@@ -16,6 +16,10 @@
 
     
 }
+.settings {
+    grid-area: settings;
+    margin-top: 40px;
+}
 
 button {
     background-color: #2596be;
@@ -38,7 +42,8 @@ button {
     grid-template-areas: 
     "title"
     "menu"
-    "settings";
+    "settings"
+    ".";
     
 }
 
@@ -76,7 +81,7 @@ li {
 }
 .menu {
     grid-area: menu;
-    
+    margin-top: -10px;
     
 }
 
