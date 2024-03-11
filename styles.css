@@ -10,7 +10,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 200px 4fr;
+    grid-template-rows: 20vh 80vh;
     grid-template-areas: 
     "dashboard header"
     "dashboard main";
@@ -62,7 +62,7 @@ li {
     grid-template-columns: max-content auto;
     align-items: center;
     gap: 29px;
-    font-size: 28px;
+    font-size: 25px;
     list-style-type: none;
     margin-top: 20px;
     padding-left: 13px;
@@ -187,10 +187,11 @@ input {
 .projects {
     display: grid;
     grid-template-columns: max-content auto;
-    grid-auto-rows: 210px;
+    grid-template-rows: max-content max-content max-content;
     column-gap: 80px;
     grid-area: projects;
     row-gap: 35px;
+    height: 650px;
     
 }
 .card {
@@ -222,6 +223,7 @@ input {
     "rightCard"
     "trendingHeader"
     "trendingCard";
+    height: 650px;
    
 }
 .rightCard  {
