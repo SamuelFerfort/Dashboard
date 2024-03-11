@@ -22,16 +22,18 @@
 }
 
 button {
-    background-color: #2596be;
+    background-color: #0ea5e9;
     color: white;
-    border-radius: 19px;
+    border-radius: 24px;
     font-weight: bold;
-    padding: 11px 23px;
-    font-size: 20px;
+    padding: 13px 30px;
+    font-size: 18px;
     border: none;
+    margin-left: 20px;
+    width: 125px;
 }
 .dashboard {
-    background-color: #2596be;
+    background-color: #0ea5e9;
     color: white;
     grid-area: dashboard;
     padding: 20px 0 0 30px;
@@ -61,17 +63,16 @@ li {
     grid-area: header;
     display: grid;
     grid-template: 1fr 1fr / 1fr;
+    padding-left: 60px;
+    align-items: center;
     
 }
-.top {
-    grid-row: 1 / 2;
-}
+
 .bot {
     grid-row: 2 / 3;
-    display: grid;
-    
-    grid-template-columns: 1fr 1fr 1fr;
-    
+   display: grid;
+   grid-template-columns: 900px auto;
+   align-items: center;
     
 }
 
@@ -84,4 +85,45 @@ li {
     margin-top: -10px;
     
 }
+svg,
+img {
+    width: 40px;
+    height: 40px;
+    
+}
+input {
+    width: 700px;
+    height: 37px;
+    border-radius: 20px;
+    border: none;
+    background-color: #e2e8f0;
+
+}
+.profileBot {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.name p {
+    font-weight: bold;
+    font-size: 18px;
+}
+.top {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 150px;
+    align-items: center;
+}
+.left,
+.right,
+.name {
+    display: grid;
+    grid-template-columns: max-content max-content auto;
+    gap: 20px;
+    align-items: center;
+
+}
+
 
