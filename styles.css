@@ -9,7 +9,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1.2fr 4fr;
     grid-template-areas: 
     "dashboard header"
     "dashboard main";
@@ -49,11 +49,19 @@ button {
     
 }
 
-ul,
+
+    
+
 li {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    gap: 25px;
     font-size: 28px;
     list-style-type: none;
-    margin-top: 15px;
+    margin-top: 20px;
+    padding-left: 13px;
+    
 }
 .main  {
     background-color: lightgrey;
@@ -77,18 +85,22 @@ li {
 }
 
 .title {
-    font-size: 35px;
     grid-area: title;
+}
+.title h1 {
+    font-size: 35px;
 }
 .menu {
     grid-area: menu;
-    margin-top: -10px;
+    
     
 }
 svg,
 img {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
+    fill: white;
+
     
 }
 input {
@@ -123,6 +135,19 @@ input {
     grid-template-columns: max-content max-content auto;
     gap: 20px;
     align-items: center;
+
+}
+
+.title svg {
+    height: 60px;
+    width: 60px;
+}
+.title {
+    display: grid;
+    grid-template-columns: max-content max-content auto;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
 
 }
 
