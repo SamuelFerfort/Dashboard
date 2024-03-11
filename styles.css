@@ -21,20 +21,24 @@
     grid-area: settings;
     margin-top: 40px;
 }
+.top img {
+    width: 30px;
+    height: 30px;
+}
 
 button {
-    background-color: #0ea5e9;
+    background-color: rgb(73, 134, 214);;
     color: white;
     border-radius: 24px;
     font-weight: bold;
     padding: 13px 30px;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
-    margin-left: 20px;
+    margin-left: 24px;
     width: 125px;
 }
 .dashboard {
-    background-color: #0ea5e9;
+    background-color: rgb(73, 134, 214);;
     color: white;
     grid-area: dashboard;
     padding: 20px 0 0 30px;
@@ -72,7 +76,9 @@ li {
     padding-left: 60px;
     
 }
-
+.bot h1 {
+    font-size: 25px;
+}
 .bot {
     grid-row: 2 / 3;
    display: grid;
@@ -118,18 +124,32 @@ input {
     font-weight: bold;
     font-size: 18px;
 }
+.rightProfile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 .top {
     display: grid;
     grid-template-columns: max-content auto;
     gap: 150px;
     align-items: center;
 }
+.top .right
+ {
+    font-size: 15px;
+}
+.right .profileBot {
+    width: 60px;
+    height: 60px;
+}
+
 .left,
 .right,
 .name {
     display: grid;
     grid-template-columns: max-content max-content auto;
-    gap: 20px;
+    gap: 28px;
     align-items: center;
 
 }
@@ -147,10 +167,10 @@ input {
 
 }
 .main  {
-    background-color: lightgrey;
+    background-color: #e2e8f0;
     grid-area: main;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.4fr 1fr;
     grid-template-rows: 40px 1fr;
     grid-template-areas: 
     "mheader mheader"
@@ -179,8 +199,10 @@ input {
     background-color: white;
     border-radius: 8px;
     padding: 20px;
-    border-left: 8px solid rgb(216, 216, 83);
+    border-left: 10px solid rgb(254, 192, 6);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: max-content max-content;
     
 }
 .card p,
@@ -190,7 +212,7 @@ input {
 .mainHeader{
     grid-area: mheader;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.4fr 1fr;
 }
 .announcements {
     grid-area: announcements;
@@ -249,5 +271,24 @@ input {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+.links {
+    
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+.links img {
+
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 50%;
+    
+    
+}
+.links img:hover {
+    background-color: #b8babd;
 }
 
