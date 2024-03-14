@@ -293,12 +293,10 @@ input {
     height: 30px;
     margin-top: 15px;
     border-radius: 50%;
-    
+    cursor: pointer;
     
 }
-.links img:hover {
-    
+.links img:hover {   
     transform: scale(1.3);
-    cursor: pointer;
 }
 
