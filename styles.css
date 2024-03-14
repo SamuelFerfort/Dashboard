@@ -27,7 +27,7 @@
 }
 
 button {
-    background-color: rgb(73, 134, 214);;
+    background-color: rgb(73, 134, 214);
     color: white;
     border-radius: 24px;
     font-weight: bold;
@@ -36,6 +36,7 @@ button {
     border: none;
     margin-left: 24px;
     width: 125px;
+    cursor: pointer;
 }
 .dashboard {
     background-color: rgb(73, 134, 214);;
@@ -53,10 +54,13 @@ button {
     ".";
     
 }
-
-
+li:hover {
+    color: rgb(254, 192, 6);
     
-
+}
+button:hover {
+    background-color: rgb(73, 134, 214, 0.8);
+}
 li {
     display: grid;
     grid-template-columns: max-content auto;
@@ -66,6 +70,8 @@ li {
     list-style-type: none;
     margin-top: 20px;
     padding-left: 13px;
+    cursor: pointer;
+    
     
 }
 
@@ -195,7 +201,7 @@ input {
     
 }
 .card {
-    height: 210px;
+    height: 205px;
     width: 450px;
     background-color: white;
     border-radius: 8px;
@@ -254,7 +260,7 @@ input {
 .trendingCard {
     grid-area: trendingCard;
     background: white;
-    height: 280px;
+    height: 270px;
     width: 350px;
     border-radius: 8px;
     padding: 20px;
